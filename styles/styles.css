@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url(header.css);
+@import url(navbar.css);
 @import url(sections.css);
 @import url(comentarios.css);
 @import url(footer.css);
 
 :root
 {
-    --gradiente-roxo: linear-gradient(to right top, #b6ccf6, #b2c8f3, #adc4f0, #a9c1ee, #a4bdeb, #a4bdeb, #a4bdeb, #a4bdeb, #a9c1ee, #adc4f0, #b2c8f3, #b6ccf6);
+    --gradiente-azul: linear-gradient(to right top, #b6ccf6, #b2c8f3, #adc4f0, #a9c1ee, #a4bdeb, #a4bdeb, #a4bdeb, #a4bdeb, #a9c1ee, #adc4f0, #b2c8f3, #b6ccf6);
 
     --cinza-escuro-logo-header: rgb(40, 40, 40);
     --preto-transparente-borda-separadora: rgba(0, 0, 0, 0.5);
+    --azul-escuro-navbar: rgb(74, 63, 138);
+    --azul-escuro-navbar-titulo: rgb(93, 61, 167);
+    --azul-escuro-navbar-subtitulo1: rgb(56, 74, 151);
+    --azul-escuro-navbar-subtitulo2: rgb(61, 80, 167);
+    --azul-escuro-navbar-subtitulo3: rgb(81, 102, 192);
+    --azul-escuro-navbar-subtitulo4: rgb(80, 99, 180);
 }
 
 body
 {
-
+    font-family: 'Inter';
 }
