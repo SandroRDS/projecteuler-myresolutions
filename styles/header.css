@@ -1,0 +1,27 @@
+.cabecalho
+{
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--preto-transparente-borda-separadora);
+    padding: 1em;
+    background-image: var(--gradiente-roxo);
+    color: var(--cinza-escuro-logo-header);
+
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho__logo
+{
+    display: block;
+    font-family: 'Dancing Script';
+    text-align: center;
+    font-size: 2em;
+    line-height: 42px;
+    font-weight: 700;
+    border-radius: 16px;
+    padding: .4em;
+    
+    box-shadow: -2px 2px 8px black, inset 5px -5px 16px #91a6cd, inset -5px 5px 16px #c1dcff;
+    color: #2a2a58;
+}

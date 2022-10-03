@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url(header.css);
+@import url(sections.css);
+@import url(comentarios.css);
+@import url(footer.css);
+
+:root
+{
+    --gradiente-roxo: linear-gradient(to right top, #b6ccf6, #b2c8f3, #adc4f0, #a9c1ee, #a4bdeb, #a4bdeb, #a4bdeb, #a4bdeb, #a9c1ee, #adc4f0, #b2c8f3, #b6ccf6);
+
+    --cinza-escuro-logo-header: rgb(40, 40, 40);
+    --preto-transparente-borda-separadora: rgba(0, 0, 0, 0.5);
+}
+
+body
+{
+
+}
