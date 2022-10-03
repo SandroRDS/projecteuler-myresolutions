@@ -7,19 +7,19 @@
     transition: all 500ms;
 
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .navbar--recolhida
 {
-    left: -80%;
+    left: -70%;
 }
 
 .navbar__topicos
 {
     padding: 1em;
     border: 1px solid rgb(53, 53, 53);
-    width: 80%;
+    width: 70%;
     box-sizing: border-box;
 }
 
