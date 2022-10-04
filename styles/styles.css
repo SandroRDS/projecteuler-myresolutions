@@ -8,9 +8,21 @@
 
 :root
 {
-    --azul-escuro: #172c3c;
+    --gradiente-azul: linear-gradient(to right bottom, #204a87, #2f5b96, #3e6da4, #4e7fb2, #5f91c0);
+    --cinza-claro: rgb(226, 226, 226);
+    --azul-escuro-dark: #142E54;
+    --azul-escuro: #204a87;
+    --azul-medio-transparente: #95b9f6c5;
+    --azul-claro: #add5fa;
+    --azul-claro-transparente: #add5fa4f;
+    --azul-acinzentado: rgb(107, 132, 146);
+    --cinza-escuro: rgba(40, 40, 40);
+    --amarelo-escuro: rgb(205, 143, 50);
+    --salmao: #f9a59a;
+    --vermelho: #fa5f49;
+    --laranja-medio: rgb(233, 104, 29);
 
-    --preto-transparente-borda-separadora: rgba(0, 0, 0, 0.5);
+    --preto-transparente-sombra: rgba(0, 0, 0, 0.5);
     --azul-escuro-navbar: rgb(74, 63, 138);
     --azul-escuro-navbar-titulo: rgb(93, 61, 167);
     --azul-escuro-navbar-subtitulo1: rgb(56, 74, 151);

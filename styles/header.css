@@ -4,11 +4,11 @@
     box-sizing: border-box;
     border-bottom: 1px solid var(--preto-transparente-borda-separadora);
     padding: 1em;
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-claro);
     position: sticky;
     top: 0;
     z-index: 10;
-    box-shadow: 0px 3px 8px black;
+    box-shadow: 0px 3px 8px var(--preto-transparente-sombra);
 
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     font-weight: 800;
     font-size: 1.1em;
     font-style: italic;
-    color: #e6b33d;
+    color: var(--azul-escuro);
     text-transform: uppercase;
 
     display: grid;
@@ -40,40 +40,52 @@
 .cabecalho__menu.material-symbols-outlined
 {
     font-size: 45px;
-    color: whitesmoke;
+    color: var(--cinza-escuro);
 }
 
 .cabecalho__navegacao
 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
     position: fixed;
     top: 117px;
     right: 0;
-    width: 300px;
+    width: 290px;
     box-sizing: border-box;
     z-index: 5;
-    background-color: var(--azul-escuro);
-    padding: 3em 1.5em;
+    background-color: var(--azul-medio-transparente);
+    padding: 1em;
+    padding-left: .5em;
     transition: all 500ms;
-    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 2px 4px var(--preto-transparente-sombra);
     border-radius: 8px 0 0 8px;
+
+    border-radius: 16px 0 0 16px;
+    backdrop-filter: blur(12.2px);
+    border: 1px solid #95b8f66b;
 }
 
 .cabecalho__navegacao--recolhido
 {
-    transform: translateX(230px);
+    transform: translateX(250px);
 }
 
 .cabecalho__navegacao__lista
 {
     display: inline-grid;
     justify-items: flex-start;
-    gap: 3em;
+    gap: 1.5em;
 }
 
 .cabecalho__navegacao__lista__itens__link
 {
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--cinza-escuro);
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 1.125em;
 
     display: flex;
     align-items: center;
@@ -83,5 +95,5 @@
 .cabecalho__navegacao__lista__itens__link .material-symbols-outlined
 {
     font-size: 30px;
-    color: whitesmoke;
+    color: var(--cinza-escuro);
 }
