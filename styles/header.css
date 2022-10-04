@@ -19,27 +19,22 @@
 {
     display: block;
     font-family: 'Lemonada';
-    font-size: 1em;
-    line-height: 42px;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #e6b33d;
+    text-transform: uppercase;
 
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: .5em;
     align-items: center;
+    gap: .5em;
 }
 
-.cabecalho__logo__titulo
+.cabecalho__logo__imagem
 {
-    font-size: 1.2em;
-    color: #995052;
-}
-
-.cabecalho__logo__texto
-{
-    grid-column: span 2;
-    font-size: 1.1em;
-    color: lightgray;
+    grid-row: span 2;
+    width: 50px;
 }
 
 .cabecalho__menu.material-symbols-outlined
@@ -59,6 +54,8 @@
     background-color: var(--azul-escuro);
     padding: 3em 1.5em;
     transition: all 500ms;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 8px 0 0 8px;
 }
 
 .cabecalho__navegacao--recolhido
