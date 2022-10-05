@@ -1,49 +1,49 @@
 .navbar
 {
-    width: 100%;
-    position: fixed;
-    top: 20vh;
-    left: 0;
-    transition: all 500ms;
+    width         : 100%;
+    position      : fixed;
+    top           : 20vh;
+    left          : 0;
+    transition    : all 500ms;
 
-    display: flex;
-    align-items: flex-end;
+    display       : flex;
+    align-items   : flex-end;
 }
 
 .navbar--recolhida
 {
-    left: -70%;
+    left   : -70%;
 }
 
 .navbar__topicos
 {
-    padding: 1em;
-    border: 1px solid rgb(53, 53, 53);
-    width: 70%;
-    box-sizing: border-box;
+    padding      : 1em;
+    border       : 1px solid rgb(53, 53, 53);
+    width        : 70%;
+    box-sizing   : border-box;
 }
 
 .navbar__topicos__titulo
 {
-    font-size: 1.5em;
-    font-weight: 800;
-    margin-bottom: 1em;
-    line-height: 26px;
-    color: var(--azul-escuro-navbar);
+    font-size       : 1.5em;
+    font-weight     : 800;
+    margin-bottom   : 1em;
+    line-height     : 26px;
+    color           : var(--azul-escuro-navbar);
 }
 
 .navbar__topicos__lista
 {
-    display: grid;
-    gap: 1.2em;
+    display   : grid;
+    gap       : 1.2em;
 }
 
 .navbar__topicos__lista__titulos__link
 {
-    color: var(--azul-escuro-navbar-titulo);
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 700;
+    color             : var(--azul-escuro-navbar-titulo);
+    text-decoration   : none;
+    font-size         : 1.2em;
+    font-weight       : 700;
 }
 
 .sublista_nivel1,
@@ -51,46 +51,46 @@
 .sublista_nivel3,
 .sublista_nivel4
 {
-    padding: .8em .5em;
+    padding   : .8em .5em;
 
-    display: grid;
-    gap: 1em;
+    display   : grid;
+    gap       : 1em;
 }
 
 .sublista_nivel1 .navbar__topicos__lista__titulos__sublista__subtitulos__link
 {
-    font-weight: 600;
-    font-size: 1.1em;
-    color: var(--azul-escuro-navbar-subtitulo1);
-    text-decoration: none;
+    font-weight       : 600;
+    font-size         : 1.1em;
+    color             : var(--azul-escuro-navbar-subtitulo1);
+    text-decoration   : none;
 }
 
 .sublista_nivel2 .navbar__topicos__lista__titulos__sublista__subtitulos__link
 {
-    font-weight: 500;
-    font-size: 1em;
-    color: var(--azul-escuro-navbar-subtitulo2);
+    font-weight   : 500;
+    font-size     : 1em;
+    color         : var(--azul-escuro-navbar-subtitulo2);
 }
 
 .sublista_nivel3 .navbar__topicos__lista__titulos__sublista__subtitulos__link
 {
-    font-weight: 400;
-    font-size: .9em;
-    color: var(--azul-escuro-navbar-subtitulo3);
+    font-weight   : 400;
+    font-size     : .9em;
+    color         : var(--azul-escuro-navbar-subtitulo3);
 }
 
 .sublista_nivel4 .navbar__topicos__lista__titulos__sublista__subtitulos__link
 {
-    font-weight: 300;
-    font-size: .8em;
-    color: var(--azul-escuro-navbar-subtitulo4);
+    font-weight   : 300;
+    font-size     : .8em;
+    color         : var(--azul-escuro-navbar-subtitulo4);
 }
 
 .navbar__botao
 {
-    background: var(--gradiente-azul);
-    border: 1px solid rgba(0, 0, 0, 0.192);
-    border-radius: 0 8px 8px 0;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
-    padding: .5em 1em;
+    background      : var(--gradiente-azul);
+    border          : 1px solid rgba(0, 0, 0, 0.192);
+    border-radius   : 0 8px 8px 0;
+    box-shadow      : 2px 2px 4px rgba(0, 0, 0, 0.75);
+    padding         : .5em 1em;
 }

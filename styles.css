@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url(/styles/header.css);
+@import url(/styles/navbar.css);
+@import url(/styles/footer.css);
+
+:root
+{
+    --gradiente-azul                  : linear-gradient(to right bottom, #204a87, #2f5b96, #3e6da4, #4e7fb2, #5f91c0);
+    --cinza-claro                     : rgb(226, 226, 226);
+    --cinza-escuro                    : rgba(40, 40, 40);
+    --azul-escuro-dark                : #142E54;
+    --azul-escuro                     : #204a87;
+    --azul-medio-transparente         : #95b9f6c5;
+    --azul-claro                      : #add5fa;
+    --azul-claro-transparente         : #add5fa4f;
+    --azul-acinzentado                : rgb(107, 132, 146);
+    --amarelo-escuro                  : rgb(205, 143, 50);
+    --salmao                          : #f9a59a;
+    --vermelho                        : #fa5f49;
+    --laranja-medio                   : rgb(233, 104, 29);
+
+    --preto-transparente-sombra       : rgba(0, 0, 0, 0.5);
+    --azul-escuro-navbar              : rgb(74, 63, 138);
+    --azul-escuro-navbar-titulo       : rgb(93, 61, 167);
+    --azul-escuro-navbar-subtitulo1   : rgb(56, 74, 151);
+    --azul-escuro-navbar-subtitulo2   : rgb(61, 80, 167);
+    --azul-escuro-navbar-subtitulo3   : rgb(81, 102, 192);
+    --azul-escuro-navbar-subtitulo4   : rgb(80, 99, 180);
+}
+
+body
+{
+    font-family   : 'Inter';
+}

@@ -1,0 +1,100 @@
+.cabecalho__navegacao__lista__itens:nth-child(2) .cabecalho__navegacao__lista__itens__link,
+.cabecalho__navegacao__lista__itens:nth-child(2) span
+{
+    color   : var(--vermelho);
+}
+
+.principal
+{
+    padding      : 1em;
+    width        : 100%;
+    height       : 58vh;
+    box-sizing   : border-box;
+}
+
+.principal__titulo
+{
+    font-size     : 1.5em;
+    margin-top    : 1em;
+    text-align    : center;
+    font-weight   : 700;
+    color         : var(--cinza-escuro);
+}
+
+.principal__lista
+{
+    max-height   : 75%;
+    margin       : 2em 0;
+    border       : 1px solid;
+    overflow-y   : scroll;
+
+    display      : grid;
+}
+
+.principal__lista__item
+{
+    padding                 : 1em;
+    border-bottom           : 1px solid rgba(0, 0, 0, 0.4);
+
+    display                 : grid;
+    grid-template-columns   : auto 1fr;
+    gap                     : 1em;
+}
+
+.principal__lista__item__titulo
+{
+    line-height   : 22px;
+    font-size     : 1.1em;
+    font-weight   : 600;
+}
+
+.principal__lista__item__titulo__link
+{
+    color             : var(--azul-escuro-dark);
+    text-decoration   : none;
+}
+
+.principal__lista__item__dificuldade
+{
+    display   : flex;
+    gap       : .5em;
+}
+
+.principal__lista__item__dificuldade__texto
+{
+    color         : var(--cinza-escuro);
+    font-weight   : 500;
+}
+
+.principal__lista__item__dificuldade__grafico
+{
+    width              : 100%;
+    background-color   : var(--cinza-claro);
+}
+
+.principal__lista__item__dificuldade__grafico__barra
+{
+    display            : block;
+    height             : 100%;
+    background-color   : var(--vermelho);
+}
+
+.dificuldade5
+{
+    width   : 5%;
+}
+
+
+.principal__lista__item__link
+{
+    grid-column    : 2;
+    grid-row       : span 2 / 1;
+    justify-self   : flex-end;
+    align-self     : center;
+}
+
+.principal__lista__item__link span
+{
+    font-size   : 30px;
+    color       : var(--vermelho);
+}

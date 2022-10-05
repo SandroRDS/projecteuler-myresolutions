@@ -1,99 +1,100 @@
 .cabecalho
 {
-    width: 100%;
-    box-sizing: border-box;
-    border-bottom: 1px solid var(--preto-transparente-borda-separadora);
-    padding: 1em;
-    background-color: var(--azul-claro);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0px 3px 8px var(--preto-transparente-sombra);
+    width              : 100%;
+    height             : 10vh;
+    box-sizing         : border-box;
+    border-bottom      : 1px solid var(--preto-transparente-borda-separadora);
+    padding            : 1em;
+    background-color   : var(--azul-claro);
+    position           : sticky;
+    top                : 0;
+    z-index            : 10;
+    box-shadow         : 0px 3px 8px var(--preto-transparente-sombra);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display            : flex;
+    justify-content    : space-between;
+    align-items        : center;
 }
 
 .cabecalho__logo
 {
-    display: block;
-    font-family: 'Lemonada';
-    font-weight: 800;
-    font-size: 1.1em;
-    font-style: italic;
-    color: var(--azul-escuro);
-    text-transform: uppercase;
+    display                 : block;
+    font-family             : 'Lemonada';
+    font-weight             : 800;
+    font-size               : 1.1em;
+    font-style              : italic;
+    color                   : var(--azul-escuro);
+    text-transform          : uppercase;
 
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    gap: .5em;
+    display                 : grid;
+    grid-template-columns   : auto auto;
+    align-items             : center;
+    gap                     : .5em;
 }
 
 .cabecalho__logo__imagem
 {
-    grid-row: span 2;
-    width: 50px;
+    grid-row   : span 2;
+    width      : 50px;
 }
 
 .cabecalho__menu.material-symbols-outlined
 {
-    font-size: 45px;
-    color: var(--cinza-escuro);
+    font-size   : 45px;
+    color       : var(--cinza-escuro);
 }
 
 .cabecalho__navegacao
 {
-    display: flex;
-    align-items: center;
-    gap: 1em;
+    display            : flex;
+    align-items        : center;
+    gap                : 1em;
 
-    position: fixed;
-    top: 117px;
-    right: 0;
-    width: 290px;
-    box-sizing: border-box;
-    z-index: 5;
-    background-color: var(--azul-medio-transparente);
-    padding: 1em;
-    padding-left: .5em;
-    transition: all 500ms;
-    box-shadow: -2px 2px 4px var(--preto-transparente-sombra);
-    border-radius: 8px 0 0 8px;
+    position           : fixed;
+    top                : 117px;
+    right              : 0;
+    width              : 290px;
+    box-sizing         : border-box;
+    z-index            : 5;
+    background-color   : var(--azul-medio-transparente);
+    padding            : 1em;
+    padding-left       : 0;
+    transition         : all 500ms;
+    box-shadow         : -2px 2px 4px var(--preto-transparente-sombra);
+    border-radius      : 8px 0 0 8px;
 
-    border-radius: 16px 0 0 16px;
-    backdrop-filter: blur(12.2px);
-    border: 1px solid #95b8f66b;
+    border-radius      : 16px 0 0 16px;
+    backdrop-filter    : blur(12.2px);
+    border             : 1px solid #95b8f66b;
 }
 
 .cabecalho__navegacao--recolhido
 {
-    transform: translateX(250px);
+    transform   : translateX(270px);
 }
 
 .cabecalho__navegacao__lista
 {
-    display: inline-grid;
-    justify-items: flex-start;
-    gap: 1.5em;
+    display         : inline-grid;
+    justify-items   : flex-start;
+    gap             : 1.5em;
 }
 
 .cabecalho__navegacao__lista__itens__link
 {
-    text-decoration: none;
-    color: var(--cinza-escuro);
-    line-height: 22px;
-    font-weight: 600;
-    font-size: 1.125em;
+    text-decoration   : none;
+    color             : var(--cinza-escuro);
+    line-height       : 22px;
+    font-weight       : 600;
+    font-size         : 1.125em;
 
-    display: flex;
-    align-items: center;
-    gap: 2em;
+    display           : flex;
+    align-items       : center;
+    gap               : 2em;
 }
 
 .cabecalho__navegacao__lista__itens__link .material-symbols-outlined
 {
-    font-size: 30px;
-    color: var(--cinza-escuro);
+    font-size   : 30px;
+    color       : var(--cinza-escuro);
 }

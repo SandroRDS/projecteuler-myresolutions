@@ -1,127 +1,114 @@
 .cabecalho__navegacao__lista__itens:nth-child(1) .cabecalho__navegacao__lista__itens__link,
 .cabecalho__navegacao__lista__itens:nth-child(1) span
 {
-    color: var(--vermelho);
+    color   : var(--vermelho);
 }
 
 .principal
 {
-    width: 100%;
-    box-sizing: border-box;
+    width        : 100%;
+    box-sizing   : border-box;
 }
 
 .principal__titulo
 {
-    display: flex;
-    align-items: center;
-    gap: .5em;
-    color: var(--azul-escuro);
-    margin-bottom: 2em;
-    padding: 0 2em;
-}
-
-.principal__titulo .material-symbols-outlined
-{
-    font-size: 35px;
-    padding-right: 8px;
-    border-right: 2px solid rgba(0, 0, 0, 0.35);
-}
-
-.principal__titulo__texto
-{
-    font-size: 1.3em;
+    font-size     : 1.5em;
+    margin-top    : 1em;
+    text-align    : center;
+    font-weight   : 700;
+    color         : var(--cinza-escuro);
 }
 
 .secao
 {
-    width: 100%;
-    box-sizing: border-box;
-    background: white;
-    padding: 1em 1em;
+    width           : 100%;
+    box-sizing      : border-box;
+    background      : white;
+    padding         : 1em 1em;
 
-    display: grid;
-    justify-items: center;
+    display         : grid;
+    justify-items   : center;
 }
 
 .secao__titulo
 {
-    font-size: 1.4em;
-    font-weight: 600;
-    margin: 1em 0;
-    color: var(--cinza-escuro);
+    font-size     : 1.4em;
+    font-weight   : 600;
+    margin        : 1em 0;
+    color         : var(--cinza-escuro);
 }
 
 .secao__imagem
 {
-    border-radius: 12px;
-    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.85);
-    border: 1px solid rgba(24, 24, 24, 0.5);
+    border-radius   : 12px;
+    box-shadow      : 5px 5px 15px 1px rgba(0, 0, 0, 0.85);
+    border          : 1px solid rgba(24, 24, 24, 0.5);
 }
 
 .secao__texto
 {
-    margin: 2em 0;
-    font-size: 1.1em;
-    text-align: justify;
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--cinza-escuro);
+    margin        : 2em 0;
+    font-size     : 1.1em;
+    text-align    : justify;
+    font-weight   : 400;
+    line-height   : 24px;
+    color         : var(--cinza-escuro);
 }
 
 .secao__texto a
 {
-    text-decoration: underline solid var(--laranja-medio) 2px;
+    text-decoration   : underline solid var(--laranja-medio) 2px;
 }
 
 .secao__texto cite
 {
-    font-style: italic;
-    font-weight: 600;
-    color: var(--laranja-medio);
+    font-style    : italic;
+    font-weight   : 600;
+    color         : var(--laranja-medio);
 }
 
 .secao__texto em
 {
-    font-weight: 600;
-    color: var(--azul-acinzentado);
+    font-weight   : 600;
+    color         : var(--azul-acinzentado);
 }
 
 .secao__texto strong
 {
-    font-weight: 600;
-    color: var(--azul-escuro);
+    font-weight   : 600;
+    color         : var(--azul-escuro);
 }
 
 .secao__texto i
 {
-    font-style: italic;
-    font-weight: 600;
-    color: var(--amarelo-escuro);
+    font-style    : italic;
+    font-weight   : 600;
+    color         : var(--amarelo-escuro);
 }
 
 .secao__citacao
 {
-    text-align: center;
-    color: var(--azul-escuro-dark);
-    font-weight: 600;
-    font-style: italic;
-    font-size: 1.1em;
-    margin-bottom: 1em;
-    padding: 0 .5em;
+    text-align      : center;
+    color           : var(--azul-escuro-dark);
+    font-weight     : 600;
+    font-style      : italic;
+    font-size       : 1.1em;
+    margin-bottom   : 1em;
+    padding         : 0 .5em;
 }
 
 .secao__botao
 {
-    text-decoration: none;
-    padding: 1em 0;
-    width: 80%;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 12px;
-    color: var(--azul-escuro);
-    font-weight: 600;
-    background-color: var(--azul-claro);
-    box-shadow: 3px 3px 6px var(--azul-escuro-dark);
-    text-align: center;
-    line-height: 22px;
+    text-decoration    : none;
+    padding            : 1em 0;
+    width              : 80%;
+    border             : 1px solid var(--cinza-claro);
+    border-radius      : 12px;
+    color              : var(--azul-escuro);
+    font-weight        : 600;
+    background-color   : var(--azul-claro);
+    box-shadow         : 3px 3px 6px var(--azul-escuro-dark);
+    text-align         : center;
+    line-height        : 22px;
 }
 
