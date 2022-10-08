@@ -1,0 +1,43 @@
+.principal
+{
+    padding      : 1em;
+    width        : 100%;
+    min-height   : 58vmax;
+    box-sizing   : border-box;
+}
+
+.principal__titulo
+{
+    font-size     : 1.5em;
+    margin-top    : 1em;
+    text-align    : center;
+    font-weight   : 700;
+    color         : var(--cinza-escuro);
+}
+
+.principal__setas
+{
+    margin: 1em 0;
+    padding: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.principal__setas .material-symbols-outlined
+{
+    color: var(--azul-escuro-dark);
+    font-size: 32px;
+    padding: .2em;
+    border: 2px solid var(--azul-escuro);
+    border-radius: 100%;
+}
+
+.principal__setas .principal__setas__icone--desativado
+{
+    background-color: var(--cinza-claro-seta-disabled);
+    border-color: var(--cinza-claro-seta-disabled);
+    color: var(--cinza-medio-seta-disabled);
+}
