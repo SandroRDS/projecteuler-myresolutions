@@ -1,0 +1,35 @@
+@media screen and (min-width: 1024px) 
+{
+    .principal__caminho
+    {
+        display: flex;
+        padding: 1em 2em;
+    }
+
+    .principal__caminho__raiz
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .principal__caminho__raiz__icone.material-symbols-outlined
+    {
+        font-size: 30px;
+        border-right: 2px solid rgba(0, 0, 0, 0.25);
+        padding-right: .1em;
+    }
+
+    .principal__caminho__raiz__nome
+    {
+        font-size: .9em;
+        font-weight: 600;
+        text-decoration: underline solid black 2px;
+        color: var(--cinza-escuro);
+        padding: 0 .5em;
+    }
+
+    .principal__caminho__raiz__nome:hover
+    {
+        text-decoration: none;
+    }    
+}

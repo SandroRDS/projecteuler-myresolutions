@@ -10,6 +10,11 @@
     box-sizing   : border-box;
 }
 
+.principal__caminho
+{
+    display: none;
+}
+
 .principal__titulo
 {
     font-size     : 1.5em;
@@ -24,7 +29,7 @@
     width           : 100%;
     box-sizing      : border-box;
     background      : white;
-    padding         : 1em 1em;
+    padding         : 1em;
 
     display         : grid;
     justify-items   : center;
@@ -102,7 +107,6 @@
     text-decoration    : none;
     padding            : 1em 0;
     width              : 80%;
-    border             : 1px solid var(--cinza-claro);
     border-radius      : 12px;
     color              : var(--azul-escuro);
     font-weight        : 600;
@@ -110,5 +114,52 @@
     box-shadow         : 3px 3px 6px var(--azul-escuro-dark);
     text-align         : center;
     line-height        : 22px;
+}
+
+@media screen and (min-width: 1024px) 
+{
+    .cabecalho__navegacao__lista__itens:nth-child(1) .cabecalho__navegacao__lista__itens__link,
+    .cabecalho__navegacao__lista__itens:nth-child(1) span
+    {
+        color   : var(--cinza-escuro);
+    }
+
+    .principal__titulo
+    {
+        text-align: left;
+        padding: 0 2em;
+        font-size: 2em;
+    }
+
+    .secao
+    {
+        padding: 2em 4em;
+    }
+
+    .secao__titulo
+    {
+        justify-self: left;
+        font-size: 1.5em;
+    }
+
+    .secao__texto a:hover
+    {
+        text-decoration: none;
+    }
+
+    .secao__botao
+    {
+        width: 30%;
+        border-radius: 16px;
+        padding: 1em 2em;
+        transition: all 500ms;
+    }
+
+    .secao__botao:hover
+    {
+        transform: scale(1.15);
+        background-color: var(--azul-escuro);
+        color: white;
+    }
 }
 

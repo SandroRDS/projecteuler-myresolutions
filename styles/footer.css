@@ -2,7 +2,7 @@
 {
     font-family        : 'Silkscreen';
     width              : 100%;
-    height             : 32vmax;
+    height             : 35vmax;
     box-sizing         : border-box;
     padding            : 2em 1em;
     background-color   : var(--azul-escuro);
@@ -23,23 +23,31 @@
 {
     width   : 100%;
     
-    display                 : grid;
-    grid-template-columns   : auto auto;
-    align-items             : center;
-    gap                     : .5em;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 50%;
+    justify-content: center;
 }
 
 .rodape__links__logo
 {
-    text-decoration       : none;
-    display               : inline-block;
+    text-decoration   : none;
+    
+    display           : flex;
+    align-items       : center;
+    gap               : 1em;
+}
+
+.rodape__links__logo span
+{
+    display               : flex;
+    align-items           : center;
+    justify-content       : center;
     width                 : 32px;
     height                : 32px;
     background-repeat     : no-repeat;
     background-position   : center;
     background-size       : contain;
-
-    justify-self          : flex-end;
 }
 
 .rodape__links__texto
@@ -72,4 +80,42 @@
     color              : whitesmoke;
     border-radius      : 8px;
     border             : 1px solid rgba(58, 58, 58, 0.959);
+}
+
+@media screen and (min-width: 1024px) 
+{
+    .rodape
+    {
+        height: 30vh;
+    }
+
+    .rodape__links
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rodape__links__logo
+    {
+        padding: .5em 1em;
+        border-radius: 4px;
+        transition: all 500ms;
+    }
+
+    .rodape__links__logo:hover
+    {
+        background-color: var(--azul-escuro-dark);
+        transform: scale(1.2);
+    }
+
+    .rodape__links__texto
+    {
+        transition: all 500ms;
+    }
+
+    .rodape__links__logo:hover .rodape__links__texto
+    {
+        transform: rotateX(360deg);
+        color: var(--cinza-claro);
+    }
 }

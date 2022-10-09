@@ -12,6 +12,11 @@
     box-sizing   : border-box;
 }
 
+.principal__caminho
+{
+    display: none;
+}
+
 .principal__titulo
 {
     font-size     : 1.5em;
@@ -97,4 +102,18 @@
 {
     font-size   : 30px;
     color       : var(--vermelho);
+}
+
+@media screen and (min-width: 1024px) 
+{
+    .cabecalho__navegacao__lista__itens:nth-child(2) .cabecalho__navegacao__lista__itens__link,
+    .cabecalho__navegacao__lista__itens:nth-child(2) span
+    {
+        color   : var(--cinza-escuro);
+    }
+
+    .principal
+    {
+        padding: 0;
+    }
 }
