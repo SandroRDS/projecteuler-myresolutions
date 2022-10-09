@@ -25,6 +25,7 @@
     font-style              : italic;
     color                   : var(--azul-escuro);
     text-transform          : uppercase;
+    text-decoration         : none;
 
     display                 : grid;
     grid-template-columns   : auto auto;
