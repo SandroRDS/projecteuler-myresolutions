@@ -32,8 +32,20 @@
     margin       : 2em 0;
     border       : 1px solid;
     overflow-y   : scroll;
-
+    overflow-x   : hidden;
     display      : grid;
+}
+
+.principal__lista::-webkit-scrollbar
+{
+    background-color: var(--cinza-claro);
+    width: 5px;
+}
+
+.principal__lista::-webkit-scrollbar-thumb
+{
+    background-color: var(--cinza-escuro);
+    border-radius: 6px;
 }
 
 .principal__lista__item
@@ -105,8 +117,8 @@
 
 .principal__lista__item__link span
 {
-    font-size   : 30px;
-    color       : var(--vermelho);
+    font-size       : 30px;
+    color           : var(--vermelho);
 }
 
 @media screen and (min-width: 1024px) 
@@ -129,9 +141,33 @@
         height: 60%;
         margin: 2em auto;
     }
+    
+    .principal__lista__item__titulo__link:hover
+    {
+        color: var(--vermelho);
+    }
 
     .principal__lista__item__descricao
     {
         display: block;
+        font-size: .9em;
+        color: var(--cinza-escuro);
+        line-height: 22px;
+    }
+
+    .principal__lista__item__link
+    {
+        grid-row: span 3 / 1;
+    }
+
+    .principal__lista__item__link span
+    {
+        padding         : .2em;
+        border-radius   : 12px;
+    }
+    
+    .principal__lista__item__link span:hover
+    {
+        background-color: var(--cinza-claro);
     }
 }
