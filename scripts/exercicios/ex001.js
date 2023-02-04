@@ -1,24 +1,14 @@
-var soma = 0;
+//Problema 1 - Múltiplos de 3 ou 5
 
-function iniciarAlgoritmo()
+const limite = 1000;
+let soma = 0;
+
+for(let i = 3; i < limite; i++)
 {
-    for(var i = 3; i < 1000; i++)
+    if((i%3 == 0) || (i%5 == 0))
     {
-        console.log(`i = ${i} | soma = ${soma}`);
-
-        if((i%3 == 0) || (i%5 == 0))
-        {
-            console.log(`${i} é múltiplo de 3 ou 5`);
-            soma += i;
-            console.log(`soma = ${soma - i} + ${i} = ${soma}`);
-        }
-        else
-        {
-            console.log(`${i} não é múltiplo de 3 ou 5`);
-        }
-
-        console.log("--------------------");
+        soma += i;
     }
-
-    console.log(`Resultado Final = ${soma}`)
 }
+
+console.log(soma);
