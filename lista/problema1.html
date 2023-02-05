@@ -7,10 +7,11 @@
     <meta name="author" content="SandroRDS">
 
     <link rel="shortcut icon" href="/images/euler-simbolo.svg" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/styles/problemas.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <title>Problema 1 | Project Euler - Minhas Resoluções</title>
 </head>
@@ -41,48 +42,6 @@
         </nav>
     </header>
 
-    <nav class="navbar navbar--recolhida">
-        <div class="navbar__topicos">
-            <h2 class="navbar__topicos__titulo">Problema 1: Múltiplo de 3 ou 5</h2>
-
-            <ol class="navbar__topicos__lista">
-                <li class="navbar__topicos__lista__titulos">
-                    <a href="" class="navbar__topicos__lista__titulos__link">1. Enunciado</a>
-                    <ol class="navbar__topicos__lista__titulos__sublista sublista_nivel1">
-                        <li class="navbar__topicos__lista__titulos__sublista__subtitulos">
-                            <a href="" class="navbar__topicos__lista__titulos__sublista__subtitulos__link">1.1 Nome do problema</a>
-                            
-                            <ol class="navbar__topicos__lista__titulos__sublista sublista_nivel2">
-                                <li class="navbar__topicos__lista__titulos__sublista__subtitulos">
-                                    <a href="" class="navbar__topicos__lista__titulos__sublista__subtitulos__link">1.1.1 adasdasd</a>
-                                </li>
-                                <li class="navbar__topicos__lista__titulos__sublista__subtitulos">
-                                    <a href="" class="navbar__topicos__lista__titulos__sublista__subtitulos__link">1.1.2 asdasdasd</a>
-                                </li>
-                            </ol>
-                        </li>
-                        <li class="navbar__topicos__lista__titulos__sublista__subtitulos">
-                            <a href="" class="navbar__topicos__lista__titulos__sublista__subtitulos__link">1.2 Dados do Problema</a>
-                        </li>
-                    </ol>
-                </li>
-                <li class="navbar__topicos__lista__titulos">
-                    <a href="" class="navbar__topicos__lista__titulos__link">2. Código Completo</a>
-                </li>
-                <li class="navbar__topicos__lista__titulos">
-                    <a href="" class="navbar__topicos__lista__titulos__link">3. Explicação do Código</a>
-                </li>
-                <li class="navbar__topicos__lista__titulos">
-                    <a href="" class="navbar__topicos__lista__titulos__link">4. Resultado Final</a>
-                </li>
-            </ol>
-        </div>
-
-        <button class="navbar__botao">
-            <span class="material-symbols-outlined">start</span>
-        </button>
-    </nav>
-
     <main class="principal">
         <h1 class="principal__titulo">Problema 1: Múltiplo de 3 ou 5</h1>
         <div class="principal__setas">
@@ -95,7 +54,20 @@
         </div>
         
         <article class="resolucao">
-            
+            <pre>
+const limite = 1000;
+let soma = 0;
+    
+for(var i = 3; i < 1000; i++)
+{
+    if((i%3 == 0) || (i%5 == 0))
+    {
+        soma += i;
+    }
+}
+    
+console.log(soma);
+            </pre>
         </article>
     </main>
 
