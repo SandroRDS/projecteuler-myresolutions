@@ -1,24 +1,17 @@
-var limite = 4000000;
-var termo1 = 1, termo2 = 2, termo3 = 3, soma = 2;
-var parada = true;
+//Problema 2 - Números pares de Fibonacci
 
-while(parada)
+const limite = 4*10e5;
+let [termoAntecessor, termoAtual, soma] = [1, 2, 2];
+
+while(termoAtual < limite)
 {
-    if(termo1 + termo2 > limite)
-    {
-        parada = false;
-    }
-    else
-    {
-        termo3 = termo1 + termo2;
-        
-        if(termo3%2 == 0)
-        {
-            soma += termo3;
-            console.log(termo3);
-        }
-    }
+    termoAtual += termoAntecessor;
+    termoAntecessor = termoAtual - termoAntecessor;
 
-    termo1 = termo2;
-    termo2 = termo3;
+    if(termoAtual%2 === 0)
+    {
+        soma += termoAtual;
+    }
 }
+
+console.log(soma);

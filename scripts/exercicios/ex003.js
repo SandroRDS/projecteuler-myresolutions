@@ -1,52 +1,29 @@
-var limiteBusca = 1;
-var numerosPrimos = [];
-var numero = 600851475143;
+const numero = 600851475143;
+let [primoAtual, maiorPrimo] = [3, 0];
 
-function buscarNumerosPrimos()
-{
-    var numerosEncontrados = 0;
-    var i = limiteBusca;
+const buscarNumeroPrimo = () => {
+    let primo = true;
+    primoAtual += 2;
 
-    while(numerosEncontrados < 10)
+    for(let i = 3; i < primoAtual; i += 2)
     {
-        var quantidadeDivisores = 0;
-
-        for(var j = 1; j <= i; j++)
-        {
-            if(i%j == 0)
-            {
-                quantidadeDivisores++;
-            }
-        }
-
-        if(quantidadeDivisores == 2)
-        {
-            numerosPrimos.push(i);
-            numerosEncontrados++;
-        }
-
-        i++;
+        primo = !(primoAtual%i === 0);
     }
 
-    limiteBusca = i;
-    console.log(numerosPrimos)
-}
-
-while(numero > 1)
-{
-    buscarNumerosPrimos();
-    
-    for(var i = 0; i < numerosPrimos.length; i++)
+    if(!primo)
     {
-        if(numero % numerosPrimos[i] == 0)
-        {
-            numero /= numerosPrimos[i];
-            i--;
-        }
-
-        if(numero == 1)
-        {
-            break;
-        }
+        buscarNumeroPrimo();
     }
 }
+
+while(primoAtual <= numero)
+{
+    buscarNumeroPrimo();
+
+    if(numero%primoAtual === 0)
+    {
+        maiorPrimo = primoAtual;
+    }
+}
+
+console.log(maiorPrimo);
