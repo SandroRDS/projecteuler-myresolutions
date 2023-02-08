@@ -1,33 +1,45 @@
-const numero = 600851475143;
-let numeroAtual = 3, maiorPrimo = 0;
+//Problema 3 - Maior fator primo
+
+let numero = 600851475143;
+let primoAtual = 0, maiorPrimo = 0;
 let numeroAchado = false;
 
-const verificarNumeroPrimo = (numero) => {
+const buscarNumeroPrimo = () => {
     let primo = true;
+    primoAtual += primoAtual !== 2 ? 2 : 1;
 
-    for(let i = 3; i < numero; i += 2)
+    for(let i = 3; i < primoAtual; i += 2)
     {
-        if(numero%i === 0)
+        if(primoAtual%i === 0)
         {
             primo = false;
             break;
         }
     }
 
-    return primo;
+    if(!primo)
+    {
+        buscarNumeroPrimo();
+    }
 }
 
-while(numeroAtual < numero)
+while(numero > 1)
 {
-    numeroAtual += 2;
-    
-    if(numero%numeroAtual === 0)
+    if(numero%primoAtual === 0)
     {
-        if(verificarNumeroPrimo(numeroAtual))
-        {
-            console.log(numeroAtual);
-            maiorPrimo = numeroAtual;
-        }
+        console.log(`${numero} / ${primoAtual}:`);
+        maiorPrimo = primoAtual;
+        numero /= primoAtual;
+        console.log(numero);
+    }
+    else
+    {
+        buscarNumeroPrimo();
+    }
+
+    if(primoAtual > numero)
+    {
+        break;
     }
 }
 
