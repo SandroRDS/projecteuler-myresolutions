@@ -63,24 +63,24 @@
 <l>const limite = 1000;</l>
 <l>let soma= 0;</l>
 <l></l>
-<l>for(var i = 3; i &lt; limite; i++)</l>
+<l>for(let i = 3; i &lt; limite; i++)</l>
 <l>{</l>
-<l>    if((i%3 === 0) || (i%5 === 0))</l>
-<l>   {</l>
-<l>        soma += i;</l>
-<l>    }</l>
+<l>     if((i%3 === 0) || (i%5 === 0))</l>
+<l>     {</l>
+<l>         soma += i;</l>
+<l>     }</l>
 <l>}</l>
 <l></l>
 <l>console.log(soma);</l></pre>
             <h2 class="principal__resolucao__titulo">Resolução Explicada</h2>
             <p class="principal__resolucao__estrofe">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eligendi ut itaque, doloremque aut animi ducimus velit quidem beatae neque.
+                Neste primeiro problema, em resumo, temos que encontrar a soma de todos os números inteiros positivos considerados <em>múltiplos</em> de 3 ou 5 e que estejam <em>abaixo</em> de 1000. Para isso, utilizei a estrutura de repetição <strong>for</strong> para analisar todos os números entre 3 e 1000, representados pela variável <code>i</code>, e everiguar quais deles são múltiplos de um dos dois números (3 ou 5) através da expressão <code>(i%3 === 0) || (i%5 === 0)</code> presente na estrutura condicional <strong>if</strong> na 6ª linha. Para cada número análisado no intervalo, será testado se ele é divisível por 3 ou por 5 (verifica-se se a divisão retorna resto 0) e, caso haja divisibilidade por algum deles, seu valor é acumulado dentro da variável <code>soma</code>, que irá somar de forma cumulativa todos os posteriores valores que apresentarem divisibilidade por 3 ou 5, se provando serem múltiplos de pelo menos um deles.
             </p>
-            <p class="principal__resolucao__estrofe">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, maxime praesentium. Totam eum facilis ea inventore praesentium, veritatis delectus soluta.
+            <p class="principal__resolucao__obs">
+                Dentro da estrutura <strong>for</strong>, a variável <code>i</code>, que representa todos os números do intervalo até o <code>limite</code>, é iniciada com o valor <code>3</code> ao invés do valor <code>0</code> para economizar capacidade de processamento em operações desprezíveis, uma vez que todos os números abaixo de 3 não são múltiplos de 3 nem de 5.
             </p>
-            <p class="principal__resolucao__estrofe">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nemo consequuntur sint odit et delectus ad eum doloribus magni modi.
+            <p class="principal__resolucao__resposta_final">
+                <span>Resposta Final:</span> <span>233168</span>
             </p>
         </article>
     </main>

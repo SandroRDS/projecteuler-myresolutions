@@ -110,8 +110,72 @@ pre l::before
 .principal__resolucao__estrofe
 {
     text-align: justify;
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-weight: 300;
+    line-height: 20px;
+}
+
+.principal__resolucao__estrofe code,
+.principal__resolucao__obs code
+{
+    display: inline-block;
+    background-color: whitesmoke;
+    color: var(--azul-escuro);
+
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.principal__resolucao__estrofe strong,
+.principal__resolucao__obs strong
+{
+    font-weight: 500;
+    color: var(--azul-escuro);
+}
+
+.principal__resolucao__estrofe em,
+.principal__resolucao__obs em
+{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.principal__resolucao__obs
+{
+    min-width: 60%;
+    max-width: 80%;
+    margin: 10px 0;
+    padding: 20px;
+
+    box-shadow: 2px 2px 5px #0000008c;
+    border-left: 5px solid salmon;
+}
+
+.principal__resolucao__resposta_final
+{
+    min-width: 50%;
+    padding: 20px;
+    margin: 10px 0;
+
+    border: 1px dashed rgb(216, 216, 216);
+    box-shadow: 2px 2px 5px #0000008c;
+
+    text-align: center;
+}
+
+.principal__resolucao__resposta_final span:nth-child(1)
+{
+    font-weight: 500;
+}
+
+.principal__resolucao__resposta_final span:nth-child(2)
+{
+    font-weight: 700;
+    color: var(--azul-escuro-dark);
 }
 
 @media screen and (min-width: 1024px) {
@@ -141,6 +205,12 @@ pre l::before
     .principal__resolucao__estrofe
     {
         width: 60%;
-        font-size: 1.2em;
+        font-size: 1.1em;
+        line-height: 22px;
+    }
+
+    .principal__resolucao__resposta_final
+    {
+        min-width: 20%;
     }
 }
