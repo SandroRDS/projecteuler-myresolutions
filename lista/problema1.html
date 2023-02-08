@@ -48,25 +48,40 @@
             <a>
                 <span class="material-symbols-outlined principal__setas__icone--desativado">arrow_back</span>
             </a>
+            <a href="/all-resolutions.html">
+                <span class="material-symbols-outlined">menu</span>
+            </a>
             <a href="problema2.html" title="Problema 2: Mesmos números de Fibonacci">
                 <span class="material-symbols-outlined">arrow_forward</span>
             </a>
         </div>
         
-        <article class="resolucao">
+        <article class="principal__resolucao">
+            <p class="principal__resolucao__enunciado_link">Acesse o <a href="https://projecteuler.net/problem=1">enunciado oficial completo</a> aqui.</p>
+            <h2 class="principal__resolucao__titulo">Código Completo</h2>
             <pre>
 <l>const limite = 1000;</l>
 <l>let soma= 0;</l>
 <l></l>
-<l>for(var i = 3; i &lt; 1000; i++)</l>
+<l>for(var i = 3; i &lt; limite; i++)</l>
 <l>{</l>
-<l>    if((i%3 == 0) || (i%5 == 0))</l>
+<l>    if((i%3 === 0) || (i%5 === 0))</l>
 <l>   {</l>
 <l>        soma += i;</l>
 <l>    }</l>
 <l>}</l>
 <l></l>
 <l>console.log(soma);</l></pre>
+            <h2 class="principal__resolucao__titulo">Resolução Explicada</h2>
+            <p class="principal__resolucao__estrofe">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eligendi ut itaque, doloremque aut animi ducimus velit quidem beatae neque.
+            </p>
+            <p class="principal__resolucao__estrofe">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, maxime praesentium. Totam eum facilis ea inventore praesentium, veritatis delectus soluta.
+            </p>
+            <p class="principal__resolucao__estrofe">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nemo consequuntur sint odit et delectus ad eum doloribus magni modi.
+            </p>
         </article>
     </main>
 

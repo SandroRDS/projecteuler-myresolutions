@@ -5,7 +5,7 @@ let soma = 0;
 
 for(let i = 3; i < limite; i++)
 {
-    if((i%3 == 0) || (i%5 == 0))
+    if((i%3 === 0) || (i%5 === 0))
     {
         soma += i;
     }
