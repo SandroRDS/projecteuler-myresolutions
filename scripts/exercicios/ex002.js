@@ -14,4 +14,4 @@ while(termoAtual < limite)
     }
 }
 
-console.log(soma);
+console.log(`Soma dos números pares até ${limite}: ${soma}`);
