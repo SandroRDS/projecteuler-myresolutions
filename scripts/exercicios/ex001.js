@@ -11,4 +11,4 @@ for(let i = 3; i < limite; i++)
     }
 }
 
-console.log(soma);
+console.log(`Soma dos múltiplos de 3 ou 5 até ${limite}: ${soma}`);
