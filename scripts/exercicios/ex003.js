@@ -31,7 +31,7 @@ while(numero > 1)
         numero /= primoAtual;
         console.log(numero);
     }
-    else
+    else //Caso o número não seja divisível pelo primo atual, buscar o próximo primo na sequência
     {
         buscarNumeroPrimo();
     }
