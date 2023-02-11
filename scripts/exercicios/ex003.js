@@ -1,8 +1,7 @@
 //Problema 3 - Maior fator primo
 
 let numero = 600851475143;
-let primoAtual = 0, maiorPrimo = 0;
-let numeroAchado = false;
+let [primoAtual, maiorPrimo] = [0, 0];
 
 const buscarNumeroPrimo = () => {
     let primo = true;
@@ -35,11 +34,6 @@ while(numero > 1)
     else
     {
         buscarNumeroPrimo();
-    }
-
-    if(primoAtual > numero)
-    {
-        break;
     }
 }
 
