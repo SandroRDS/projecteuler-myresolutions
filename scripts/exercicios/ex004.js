@@ -1,29 +1,28 @@
-var algarismos, algarismosInvertidos = [], mult, maiorPalindromo = 0;
-var palindromo = true;
+//Problema 4 - Maior produto palíndromo
 
-for(var i = 100; i <= 999; i++)
+const limite = 999;
+let maiorPalindromo = 0;
+
+const isPalindrome = (numero) => {
+    const numeroInvertido = numero.toString().split('').reverse().toString().replaceAll(',', '');
+    return parseInt(numeroInvertido) === numero;
+};
+
+for(let i = 100; i <= limite; i++)
 {
-    for(var j = 100; j <= 999; j++)
+    for(let j = 100; j <= limite; j++)
     {
-        mult = i * j;
+        const produto = i * j;
 
-        algarismos = String(mult).split('');
-        
-        for(k = algarismos.length - 1; k >= 0; k--)
+        if(isPalindrome(produto))
         {
-            if(algarismos[k] != algarismos[algarismos.length - 1 - k])
+            if(maiorPalindromo < produto)
             {
-                palindromo = false;
-                break;
+                maiorPalindromo = produto;
+                console.log(`${i} x ${j} = ${produto}`);
             }
         }
-
-        
-        if(palindromo && (mult > maiorPalindromo))
-        {
-            maiorPalindromo = mult;
-        }
-
-        palindromo = true;
-    }   
+    }
 }
+
+console.log("Maior palíndromo: " + maiorPalindromo);
