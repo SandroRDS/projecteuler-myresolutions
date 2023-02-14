@@ -1,13 +1,18 @@
-var somaDosQuadrados = 0, quadradoDaSoma = 0, limite = 100;
+//Problema 6 - Diferença da Soma Quadrada
 
-for(var i = 1; i <= limite; i++)
+const limite = 100;
+let [somaDosQuadrados, quadradoDaSoma] = [0,0];
+
+for(let i = 1; i <= limite; i++)
 {
     somaDosQuadrados += Math.pow(i, 2);
     quadradoDaSoma += i;
 }
 
-quadradoDaSoma *= quadradoDaSoma; 
+quadradoDaSoma = Math.pow(quadradoDaSoma, 2); 
 
-var diferenca = quadradoDaSoma - somaDosQuadrados;
+let diferenca = quadradoDaSoma - somaDosQuadrados;
 
-console.log(quadradoDaSoma, somaDosQuadrados, diferenca);
+console.log(`Soma dos Quadrados = ${somaDosQuadrados}`);
+console.log(`Quadrado da Soma = ${quadradoDaSoma}`);
+console.log(`Diferença = ${quadradoDaSoma} - ${somaDosQuadrados} = ${diferenca}`);
