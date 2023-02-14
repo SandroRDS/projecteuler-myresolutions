@@ -1,30 +1,29 @@
-function buscarNumerosPrimos()
-{
-    var numerosEncontrados = 0;
-    var i = 2;
-    var numeroPrimo;
-    var limite = 10001;
+//Problema 7 - 10001º primo
 
-    while(numerosEncontrados < limite)
+let primoAtual = 0, posicao = 10001;
+
+const buscarNumeroPrimo = () => {
+    let primo = true;
+    primoAtual += primoAtual !== 2 ? 2 : 1;
+
+    for(let i = 3; i < primoAtual; i += 2)
     {
-        var quantidadeDivisores = 0;
-
-        for(var j = 1; j <= i; j++)
+        if(primoAtual%i === 0)
         {
-            if(i%j == 0)
-            {
-                quantidadeDivisores++;
-            }
+            primo = false;
+            break;
         }
+    }
 
-        if(quantidadeDivisores == 2)
-        {
-            numeroPrimo = i;
-            numerosEncontrados++;
-        }
-        
-        i++;
+    if(!primo)
+    {
+        buscarNumeroPrimo();
     }
 }
 
-buscarNumerosPrimos();
+for(let i = 1; i <= posicao; i++)
+{
+    buscarNumeroPrimo();
+}
+
+console.log(`${posicao}º primo: ${primoAtual}`);
