@@ -1,35 +1,31 @@
-var numerosPrimos = []
+//Soma de primos
 
-function buscarNumerosPrimos()
-{
-    var limite = 2000000;
-    var soma = 2;
-    var quantidadeDivisores = 0;
+let primoAtual = 0, limite = 2000000, soma = 0;
 
-    for(var i = 3; i < limite; i += 2)
+const buscarNumeroPrimo = () => {
+    let primo = true;
+    primoAtual += primoAtual !== 2 ? 2 : 1;
+
+    for(let i = 3; i < primoAtual; i += 2)
     {
-        for(var j = 1; j <= i; j += 2)
+        if(primoAtual%i === 0)
         {
-            if(i%j == 0)
-            {
-                quantidadeDivisores++;
-            }
-            
-            if(quantidadeDivisores == 2)
-            {
-                quantidadeDivisores = 0;
-                
-                if(j == i)
-                {
-                    soma += i;
-                }
-                else
-                {
-                    break;
-                }
-            }
+            primo = false;
+            break;
         }
+    }
+
+    if(!primo)
+    {
+        buscarNumeroPrimo();
     }
 }
 
-buscarNumerosPrimos()
+while(primoAtual < limite)
+{
+    console.log(primoAtual);
+    soma += primoAtual;
+    buscarNumeroPrimo();
+}
+
+console.log(`Soma dos primos: ${soma}`);
