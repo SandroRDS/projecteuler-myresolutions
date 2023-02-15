@@ -1,27 +1,39 @@
-var resposta = document.querySelector("#resposta");
-var a = 1, b = 2, c = 3;
-var numeroEncontrado = false;
-var resultado;
+//Problema 9 - Terno pitagórico especial
 
-while(c <= 1000)
+let [a, b, c] = [,, 3];
+let ternoEncontrado = false;
+let produtoTerno;
+
+const testarTernoPitagorico = (a, b, c) => {
+    return Math.pow(a, 2) + Math.pow(b, 2) === Math.pow(c, 2) 
+}
+
+while(!ternoEncontrado)
 {
+    c++;
+
     for(b = 2; b < c; b++)
     {
         for(a = 1; a < b; a++)
         {
-            var somaCatetos = Math.pow(a, 2) + Math.pow(b, 2);
-            var hipotenusa = Math.pow(c, 2);
-
-            if(somaCatetos == hipotenusa)
+            if(testarTernoPitagorico(a, b, c))
             {
-                if(a + b + c == 1000)
+                console.log(`a: ${a} b: ${b} c: ${c}`);
+
+                if(a + b + c === 1000)
                 {
-                    resultado = a * b * c;
-                    resposta.innerHTML = resultado;
+                    produtoTerno = a * b * c;
+                    ternoEncontrado = true;
+                    break;
                 }
             }
         }
+
+        if(ternoEncontrado)
+        {
+            break;
+        }
     }
-    
-    c++;
 }
+
+console.log(`Produto do terno pitagórico especial: ${produtoTerno}`);
