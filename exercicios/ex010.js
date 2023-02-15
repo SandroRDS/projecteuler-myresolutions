@@ -23,7 +23,6 @@ const buscarNumeroPrimo = () => {
 
 while(primoAtual < limite)
 {
-    console.log(primoAtual);
     soma += primoAtual;
     buscarNumeroPrimo();
 }
